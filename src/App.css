@@ -1,38 +1,108 @@
-.App {
+body {
+  margin: 0px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: #ce7da6;
+  height: 39px;
+  margin-top: 1px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section {
+  flex-grow: 1;
+  border-right: 1px solid #27283881;
+  overflow-y: auto;
+  height: calc(100vh - 40px);
+}
+
+.left-section ul{
+  list-style-type: none;
+  line-height: 2em;
+  padding: 0px 10px;
+  margin: 1px;
+}
+
+.left-section ul li{
+  border-bottom: 0.5px solid #27283881;
+  padding-left: 5px;
+}
+
+.left-section ul li:hover{
+  background-color: rgba(28, 155, 39, 0.623);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.search-box {
+  width: 100%;
+  height: 25px;
+  padding-left: 15px;
+}
+
+.selected-country {
+  background-color: rgba(20, 90, 26, 0.651);
+  color: white;
+  line-height: 2.5em;
+  font-weight: bold;
+}
+
+.right-section {
+  flex-grow: 4;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.right-section-heading {
+  padding: 2px 0px;
+  background-color: #272838;
   color: white;
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-heading {
+  text-decoration: underline;
+}
+
+.card-component {
+  border: 1px solid #27283881;
+  min-width: 150px;
+  min-height: 60px;
+  line-height: 1.25em;
+  font-size: 1em;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.confirmed {
+  border-bottom: 10px solid #4964df;
+}
+
+.deaths {
+  border-bottom: 10px solid #c40b0b;
+}
+
+.recovered {
+  border-bottom: 10px solid #48d35f;
 }
